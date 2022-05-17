@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Кливец](https://up.htmlacademy.ru/htmlcss/34/user/2081563).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Котиков] (https://htmlacademy.ru/profile/niklcat).
 
 ---
 
