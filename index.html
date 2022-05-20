@@ -5,8 +5,44 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <header class="page-header">
+    <nav class="navigation">
+      <a class="logo" href="#">
+        <img class="page-logo" alt="Логотип магазина Девайс" src="">
+      </a>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <input class="search" type="search" name="search" id="search">
+        <button class="submit-search" type="submit">Найти</button>
+      </form>
+      <ul class="navigation-main">
+        <li class="list-item">
+          <a class="navigation-link" href="#">Войти</a>
+        </li>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
+      <ul class="navigation-catalog">
+        <li class="list-item">
+          <a class="navigation-link" href="#">Каталог товаров</a>
+        </li>
+        <button class="hidden-catalog" type="button">
+          <span class="visually-hidden">Показ каталога</span>
+        </button>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Доставка</a>
+        </li>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Гарантия</a>
+        </li>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   </body>
 </html>
