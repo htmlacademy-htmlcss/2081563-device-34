@@ -49,14 +49,15 @@
       Интернет магазин "Девайс"
       </h1>
       <section class="new-products">
-        <h2 class="visually-hidden">Карта товара</h2>
+        <h2 class="visually-hidden">Карта товаров</h2>
           <button class="slider-button slider-prev">
             <span class="visually-hidden">Предыдущий товар</span>
           </button>
-          <img class="slider-image" src="" alt="Фото нового товара">
           <button class="slider-button slider-next">
             <span class="visually-hidden">Следующий товар</span>
           </button>
+          <div class="new-product-card">
+          <img class="slider-image" src="" alt="Фото нового товара">
           <h3>Порхает как бабочка,
             жалит как пчела!</h3>
           <p class="new-products-description">
@@ -65,23 +66,6 @@
           <a class="button-more" href="#">
             Подробнее
           </a>
-          <ol class="slider-pagination">    
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span>1 Карточка</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span>2 Карточка</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span>3 Карточка</span>
-              </button>
-            </li>
-          </ol> 
           <ul class="new-product-feature">
             <li class="new-product-feature-item">
               <b>800 м</b>
@@ -92,29 +76,65 @@
               <p>Радиус поражения</p>
             </li>
           </ul>
+        </div>
+        <ol class="slider-pagination">    
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span>1 Карточка</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span>2 Карточка</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span>3 Карточка</span>
+            </button>
+          </li>
+        </ol>
       </section>
       <section class="main-catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="main-catalog-list">
           <li class="main-catalog-item">
-            <a class="catalog-item-link" href="#">Виртуальная
-            реальность</a>
+            <a class="catalog-item-link" href="#">
+              <img class="catalog-item-img" alt="">
+              <h3 class="catalog-item-title">Виртуальная
+                реальность</h3>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a class="catalog-item-link" href="catalog.html">Моноподы 
-            для селфи</a>
+            <a class="catalog-item-link" href="#">
+              <img class="catalog-item-img" alt="">
+              <h3 class="catalog-item-title">Моноподы 
+                для селфи</h3>
+            </a>
+          </li>
+           <li class="main-catalog-item">
+            <a class="catalog-item-link" href="#">
+              <img class="catalog-item-img" alt="">
+              <h3 class="catalog-item-title">Экшн-камеры</h3>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a class="catalog-item-link" href="#">Экшн-камеры</a>
+            <a class="catalog-item-link" href="#">
+              <img class="catalog-item-img" alt="">
+              <h3 class="catalog-item-title">Фитнес-браслеты</h3>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+            <a class="catalog-item-link" href="#">
+              <img class="catalog-item-img" alt="">
+              <h3 class="catalog-item-title">Умные часы</h3>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a class="catalog-item-link" href="#">Умные часы</a>
-          </li>
-          <li class="main-catalog-item">
-            <a class="catalog-item-link" href="#">Квадрокоптеры</a>
+            <a class="catalog-item-link" href="#">
+              <img class="catalog-item-img" alt="">
+              <h3 class="catalog-item-title">Квадрокоптеры</h3>
+            </a>
           </li>
         </ul>
       </section>
@@ -137,13 +157,15 @@
             </button>
           </li>
         </ol>
-        <h3 class="advantadges-delivery">Доставка</h3>
+        <div class="advantages-card">
+        <h3 class="advantadges-title">Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
       </section>
       <section class="delivery">
-        <div class="delivery-section">Доставим редкий товар под заказ</div>
+        <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
       </section>
       <section class="about">
         <h2 class="about-title">О нас</h2>
