@@ -6,33 +6,32 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="logo" href="#">
+         <img class="page-logo" alt="Логотип магазина Девайс." src="">
+      </a>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <label class="visually-hidden" for="search">Поиск.</label>
         <input class="search" type="search" name="search" id="search" placeholder="Текст поиска">
         <button class="submit-search" type="submit">Найти</button>
       </form>
+      <ul class="navigation-main">
+        <li class="list-item">
+          <a class="navigation-link" href="#">Войти</a>
+        </li>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="list-item">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
       <nav class="navigation">
-        <a class="logo" href="#">
-          <img class="page-logo" alt="Логотип магазина Девайс." src="">
-        </a>
-        <ul class="navigation-main">
-          <li class="list-item">
-            <a class="navigation-link" href="#">Войти</a>
-          </li>
-          <li class="list-item">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="list-item">
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
-        </ul>
         <ul class="navigation-catalog">
           <li class="list-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
-          </li>
-          <li class="list-item"><button class="hidden-catalog" type="button">
-            <span class="visually-hidden">Показ каталога.</span>
-          </button>
+            <button class="hidden-catalog" type="button">
+              <span class="visually-hidden">Показ каталога.</span>
+            </button>
           </li>
           <li class="list-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -44,7 +43,7 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-      </nav>
+        </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">
@@ -69,8 +68,8 @@
             Подробнее
           </a>
           <dl class="new-product-list">
-              <dt>Дальность полета</dt>
-              <dd>800 м</dd>
+            <dt>Дальность полета</dt>
+            <dd>800 м</dd>
             <dt>Радиус поражения</dt>
             <dd>50 м</dd> 
           </dl>
@@ -148,25 +147,25 @@
           </li>
            <li class="main-catalog-item">
             <a class="catalog-item-link" href="#">
-              <img class="catalog-item-img" alt="Экшн-камеры." src="#">
+              <img class="catalog-item-img" alt="Экшн-камеры." src="">
               <h3 class="catalog-item-title">Экшн-камеры</h3>
             </a>
           </li>
           <li class="main-catalog-item">
             <a class="catalog-item-link" href="#">
-              <img class="catalog-item-img" alt="Фитнес-браслеты." src="#">
+              <img class="catalog-item-img" alt="Фитнес-браслеты." src="">
               <h3 class="catalog-item-title">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="main-catalog-item">
             <a class="catalog-item-link" href="#">
-              <img class="catalog-item-img" alt="Умные часы." src="#">
+              <img class="catalog-item-img" alt="Умные часы." src="">
               <h3 class="catalog-item-title">Умные часы</h3>
             </a>
           </li>
           <li class="main-catalog-item">
             <a class="catalog-item-link" href="#">
-              <img class="catalog-item-img" alt="Квадрокоптеры." src="#">
+              <img class="catalog-item-img" alt="Квадрокоптеры." src="">
               <h3 class="catalog-item-title">Квадрокоптеры</h3>
             </a>
           </li>
@@ -174,40 +173,32 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества.</h2>
-        <ol class="advantages-slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span>Доставка</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span>Гарантия</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span>Кредит</span>
-            </button>
-          </li>
-        </ol>
-        <div class="advantages-card-current">
-        <h3 class="advantages-title">Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно! Ведь
-          мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="advantages-card">
-          <h3 class="advantadges-title">Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-          </div>
-          <div class="advantages-card">
-            <h3 class="advantadges-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+        <div class="tabs">
+            <nav class="tabs_items">
+                <a class="tabs_item" href="#tab01"><span>Доставка</span></a>
+                <a class="tabs_item" href="#tab02"><span>Гарантия</span></a>
+                <a class="tabs_item" href="#tab03"><span>Кредит</span></a>
+            </nav>
+            <div class="tabs_body">
+              <div class="tabs_block" id="#tab01">
+                  <h3 class="advantages-title">Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
+              <div class="tabs_block" id="#tab02">
+                  <h3 class="advantages-title">Гарантия</h3>
+                  <p>Если из-за возгорания купленного у нас товара у вас
+                  сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.</p>
+              </div>
+              <div class="tabs_block" id="#tab03">
+                  <h3 class="advantages-title">Кредит</h3>
+                  <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              </div>
             </div>
-      </section>
+        </div>
+    </section>
       <section class="delivery">
         <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
       </section>
@@ -238,8 +229,8 @@
         Заодно сможете проверить работоспособность покупки. 
         </p>
         <h3 class="address-name">Интернет-магазин «Девайс»</h3>
-        <address class="contacts-adress">
-          <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
@@ -268,7 +259,7 @@
         <a class="logo" href="#">
           <img class="page-logo" alt="Логотип магазина Девайс." src="">
         </a>
-        <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
       </section>
       <nav class="footer-navigation">
