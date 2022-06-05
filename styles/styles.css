@@ -71,6 +71,7 @@ body {
 .new-products {
     margin: 0 auto;
     width: 1160px;
+    background-image: linear-gradient(#FFE17F 149px, #FFFFFF 149px);
 }
 
 .catalog-header {
