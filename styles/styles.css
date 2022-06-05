@@ -45,8 +45,10 @@ body {
 
 .logo-header {
     display: block;
-    margin-top: 20px;
+    margin-top: -20px;
+    /*(20px)*/
     margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 .main-header {
@@ -54,6 +56,7 @@ body {
     color: #000000;
     margin: 0 auto;
     width: 1160px;
+    margin-top: 40px;
 }
 
 .navigation-main {
@@ -61,14 +64,9 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 1040px;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
-
-.navigation-main .list-item:nth-child(3) {
-    margin-left: auto;
-}
-
-
-
 
 .new-products {
     margin: 0 auto;
@@ -78,6 +76,40 @@ body {
 .catalog-header {
     background-color: #FFE17F;
     color: #000000;
+}
+
+.yellow {
+    background-color: #FFE17F;
+    color: #000;
+    width: 10px;
+}
+
+.slider-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider-pagination {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.slider-pagination-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-pagination-button {
+    width: 12px;
+    height: 12px;
+    padding: 12px;
+}
+
+.button-and-pagination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
 }
 
 .navigation-link {
@@ -102,6 +134,9 @@ body {
     padding: 0;
     width: 1040px;
     display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-bottom: 37px;
 }
 
 .navigation-catalog .list-item:first-child {
@@ -112,6 +147,13 @@ body {
     font-family: Raleway, sans-serif;
     font-size: 50px;
     line-height: 50px;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.new-products-description {
+    margin: 0;
+    margin-bottom: 51px;
 }
 
 .new-product-card {
@@ -121,6 +163,12 @@ body {
     justify-content: space-between;
 }
 
+.new-product-table {
+    display: flex;
+}
+
+
+
 .container-card {
     width: 560px;
     align-self: flex-start;
@@ -128,6 +176,7 @@ body {
 
 .container-title {
     width: 560px;
+    margin-top: 120px;
 }
 
 .button-more {
@@ -138,14 +187,31 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    width: 220px;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: auto;
+}
+
+.new-product-list {
+    margin: 0;
+    padding: 0;
+}
+
+.new-product-list:not(:last-child) {
+    margin-right: 20px;
 }
 
 .new-product-list dd {
     font-size: 36px;
+    margin: 0;
 }
 
 .new-product-list dt {
     color: #444444;
+    margin: 0;
 }
 
 .main-catalog-list {
@@ -154,6 +220,7 @@ body {
     line-height: 24px;
     list-style-type: none;
     margin: 0 auto;
+    margin-bottom: 70px;
     width: 1160px;
     display: flex;
     padding: 0;
@@ -173,31 +240,48 @@ body {
     background-color: #F0F0F0;
 }
 
+.advantages-description {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 145px;
+    width: 452px;
+}
+
 .tabs {
     margin: 0 auto;
     width: 1160px;
     display: flex;
+    margin-bottom: 70px;
 }
 
 .tabs_items {
     width: 280px;
-    margin-right: 123px;
+    margin-right: 116px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabs_item_button {
     display: block;
 }
 
+.tabs_item_button:first-child {
+    margin-top: 64px;
+    margin-bottom: 35px;
+}
+
+.tabs_item_button:nth-child(2) {
+    margin-bottom: 35px;
+}
+
 .advantages-title {
     font-family: Raleway, sans-serif;
     font-size: 50px;
     line-height: 50px;
-}
-
-.delivery {
-    background-color: #F0F0F0;
-    margin: 0 auto;
-    width: 1160px;
+    margin: 0;
+    padding: 0;
+    margin-top: 72px;
+    margin-bottom: 34px;
 }
 
 .delivery {
@@ -207,11 +291,18 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 0 auto;
+    width: 1160px;
+    margin-bottom: 70px;
+
 }
 
 .delivery-link {
+    display: block;
     color: #000000;
     text-decoration: none;
+    padding: 40px;
+    background-color: #F0F0F0;
 }
 
 .about_and_contacts {
@@ -234,11 +325,24 @@ body {
     font-family: Raleway, sans-serif;
     font-size: 50px;
     line-height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-top: 47px;
+    margin-bottom: 48px;
 }
 
 .about-description,
 .contacts-description {
     color: #444444;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.address-name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
 }
 
 .contacts h3 {
@@ -250,16 +354,40 @@ body {
 .contacts-address,
 .contacts-working-hours-text {
     color: #444444;
+    font-style: normal;
+    margin: 0;
+}
+
+.contacts-working-hours-text:last-of-type {
+    margin-bottom: 30px;
+}
+
+.contacts-working-hours {
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .contacts-phone {
     color: #444444;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .about-list {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.about-item b {
+    margin-left: 37.5px;
+}
+
+.about-item:not(:last-child) {
+    margin-bottom: 19px;
 }
 
 .about-link,
@@ -271,6 +399,12 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 70px;
+    display: block;
+    width: 259px;
 }
 
 .newsletter {
@@ -292,11 +426,22 @@ body {
     font-size: 50px;
     line-height: 50px;
     width: 350px;
+    margin: 0;
+    padding: 0;
+    margin-top: 64px;
+    margin-bottom: 144px;
 }
 
 .newsletter-text {
     color: #444444;
     width: 560px;
+    margin: 0;
+    margin-top: 74px;
+    margin-bottom: 144px;
+}
+
+.field {
+    margin-bottom: 56px;
 }
 
 .page-footer {
@@ -312,6 +457,8 @@ body {
 .contacts-address-text {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-navigation {
@@ -330,13 +477,16 @@ body {
 
 .footer-wrapper {
     display: flex;
+    margin-bottom: 61px;
 }
 
 .footer-social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .navigation-catalog-footer {
@@ -350,12 +500,14 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     list-style-type: none;
+    margin-bottom: 62px;
 }
 
 .contacts-phone-footer {
     font-size: 16px;
     line-height: 20px;
     display: block;
+    margin-bottom: 63px;
 }
 
 .phone {
@@ -370,12 +522,18 @@ body {
 .header-inner {
     width: 1080px;
     margin-left: 60px;
+    margin-bottom: 35px;
 }
 
 .header-inner h1 {
     font-family: Raleway, sans-serif;
     font-size: 50px;
     line-height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 16px;
+
 }
 
 .breadcrumbs-link {
@@ -390,6 +548,29 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 36px;
+}
+
+.sort-filter {
+    display: flex;
+    padding: 20px 40px;
+}
+
+.sorting-title {
+    margin: 0;
+    padding: 0;
+    margin-right: 206px;
+}
+
+.select-control {
+    margin-right: 206px;
+}
+
+.button-sort-down,
+.button-sort-up {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
 }
 
 .catalog-products {
@@ -445,15 +626,25 @@ body {
 
 .product-list {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button-show-more {
+    margin-bottom: 44px;
 }
 
 .white-background {
     background-color: #FFFFFF;
+    padding-bottom: 78px;
 }
 
 .pagination-link {
     color: #444444;
     text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 16.5px;
 }
 
 .pagination-prev,
@@ -465,19 +656,52 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+    padding: 25px;
+}
+
+.pagination-list:first-child {
+    margin-right: auto;
+}
+
+.pagination-list:last-child {
+    margin-left: auto;
+}
+
+.pagination-link:not(:first-child, :last-child) {
+    width: 40px;
+    height: 40px;
 }
 
 .pagination {
     list-style-type: none;
     background-color: #EBEBEB;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    width: 760px;
 }
 
 .logo-footer {
     display: block;
     margin-top: 62px;
+    width: 145px;
+    margin-bottom: 35px;
 }
 
-/*.visually-hidden {
+
+
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.footer-social-item:last-child {
+    margin-right: 0;
+}
+
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -488,4 +712,4 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}

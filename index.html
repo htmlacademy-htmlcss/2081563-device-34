@@ -74,15 +74,38 @@
           <p class="new-products-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
+          <div class="button-and-pagination">
           <a class="button-more" href="#">
-            Подробнее
+          Подробнее
           </a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span>1</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span>2</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span>3</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+          <div class="new-product-table">
           <dl class="new-product-list">
-            <dt>Дальность полета</dt>
             <dd>800 м</dd>
-            <dt>Радиус поражения</dt>
-            <dd>50 м</dd>
+            <dt>Дальность полета</dt>
           </dl>
+          <dl class="new-product-list">
+            <dd>50 м</dd>
+            <dt>Радиус поражения</dt>
+          </dl>
+        </div>
         </div>
       </div>
       <!--<div class="new-product-card">
@@ -102,12 +125,31 @@
         <p class="new-products-description">
           Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
         </p>
-        <a class="button-more" href="#">
+        <div class="button-and-pagination">
+          <a class="button-more" href="#">
           Подробнее
-        </a>
+          </a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span>1</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span>2</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span>3</span>
+              </button>
+            </li>
+          </ol>
+        </div>
         <dl class="new-product-list">
-          <dt>Без подзарядки</dt>
           <dd>48 часов</dd>
+          <dt>Без подзарядки</dt>
         </dl>
         </div>
       </div>
@@ -129,36 +171,42 @@
           Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5
           кг.
         </p>
-        <a class="button-more" href="#">
+        <div class="button-and-pagination">
+          <a class="button-more" href="#">
           Подробнее
-        </a>
+          </a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span>1</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span>2</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span>3</span>
+              </button>
+            </li>
+          </ol>
+        </div>
         <dl class="new-product-list">
-          <dt>Длина палки</dt>
           <dd>8,5 м</dd>
-          <dt>Вес палки</dt>
+          <dt>Длина палки</dt>
+        </dl>
+        <dl class=class="new-product-list">
           <dd>5 кг</dd>
-          <dt>Материал</dt>
+          <dt>Вес палки</dt>
+          </dl>
+        <dl class=class="new-product-list">
           <dd>Карбон</dd>
+          <dt>Материал</dt>
         </dl>
         </div>
       </div>-->
-      <ol class="slider-pagination">
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span>1 Карточка</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
-            <span>2 Карточка</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
-            <span>3 Карточка</span>
-          </button>
-        </li>
-      </ol>
     </section>
     <section class="main-catalog">
       <h2 class="visually-hidden">Каталог товаров.</h2>
@@ -219,19 +267,19 @@
         </div>
         <div class="tabs_block">
           <h3 class="advantages-title">Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо
+          <p class="advantages-description">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
         <!--<div class="tabs_block">
             <h3 class="advantages-title">Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас
+            <p class="advantages-description">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </div>
           <div class="tabs_block">
             <h3 class="advantages-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            <p class="advantages-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
               кредита. Выгодные для банка, разумеется.</p>
           </div>-->
       </div>
@@ -288,8 +336,8 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
         </div>
-        <label class="newsletter-email">Email</label>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label class="visually-hidden">Email</label>
+        <form class="form-subscribe" action="https://echo.htmlacademy.ru/courses" method="post">
           <label class="visually-hidden" for="email">Почта.</label>
           <input class="field" type="email" name="newsletter-email" id="email" placeholder="Ваш e-mail">
           <button class="newsletter-button" type="submit">Подписаться</button>
