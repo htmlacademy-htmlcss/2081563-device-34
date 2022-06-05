@@ -311,6 +311,8 @@ body {
     width: 1160px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
+    padding-top: 40px;
 }
 
 .about {
@@ -328,7 +330,6 @@ body {
     line-height: 50px;
     margin: 0;
     padding: 0;
-    margin-top: 47px;
     margin-bottom: 48px;
 }
 
@@ -403,7 +404,6 @@ body {
     padding: 10px;
     padding-left: 6px;
     padding-right: 6px;
-    margin-bottom: 70px;
     display: block;
     width: 259px;
 }
@@ -415,6 +415,7 @@ body {
 .newsletter-container {
     margin: 0 auto;
     width: 1160px;
+    padding-bottom: 56px;
 }
 
 .wrapper-container {
@@ -439,10 +440,6 @@ body {
     margin: 0;
     margin-top: 74px;
     margin-bottom: 144px;
-}
-
-.field {
-    margin-bottom: 56px;
 }
 
 .page-footer {
