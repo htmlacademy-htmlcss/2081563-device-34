@@ -71,7 +71,7 @@ body {
 .new-products {
     margin: 0 auto;
     width: 1160px;
-    background-image: linear-gradient(#FFE17F 149px, #FFFFFF 149px);
+    background-image: linear-gradient(#FFE17F 25%, #FFFFFF 25%);
 }
 
 .catalog-header {
@@ -137,7 +137,6 @@ body {
     display: flex;
     gap: 45px;
     flex-wrap: wrap;
-    margin-bottom: 37px;
 }
 
 .navigation-catalog .list-item:first-child {
