@@ -4,36 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс - Каталог</title>
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="main-header">
     <a class="logo-header" href="index.html">
-      <img class="page-logo" alt="Логотип магазина Девайс." src="../images/header-images/logo.svg" width="145"
-        height="36">
+      <img class="page-logo" alt="Логотип магазина Девайс." src="images/header-images/logo.svg" width="145" height="36">
     </a>
-    <ul class="navigation-main">
-      <li class="list-item">
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <div class="wrapper">
+      <div class="navigation-wrapper">
+        <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
           <label class="visually-hidden" for="search">Поиск.</label>
           <input class="search" type="search" name="search" id="search" placeholder="Текст поиска">
           <button class="submit-search" type="submit">Найти</button>
         </form>
-      </li>
-      <li class="list-item">
         <a class="navigation-link" href="#">Коля Петухов</a>
-      </li>
-      <li class="list-item">
-        <a class="navigation-link navigation-link-current" href="#">Выйти</a>
-      </li>
-      <li class="list-item">
+        <a class="navigation-link">Выйти</a>
+      </div>
+      <div class="navigation-wrapper">
         <a class="navigation-link" href="#">Сравнить</a>
-      </li>
-      <li class="list-item">
         <a class="navigation-link" href="#">Корзина</a>
-      </li>
-    </ul>
+      </div>
+    </div>
     <nav class="navigation">
       <ul class="navigation-catalog">
         <li class="list-item">
@@ -56,18 +49,20 @@
   </header>
   <main class="main-inner main-container">
     <header class="header-inner">
-      <h1>Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Каталог</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Моноподы для селфи</a>
-        </li>
-      </ul>
+      <div class="header-inner-conteiner">
+        <h1>Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <section class="catalog-products">
       <div class="catalog-products-container">
@@ -133,7 +128,7 @@
         </div>
         <div class="container-sort">
           <div class="sort-filter">
-            <h2 class="sorting-title">Сортировка</h2>
+            <h2 class="sorting-title">сортировка:</h2>
             <select class="select-control">
               <option value="popular">Популярные</option>
               <option value="expensive">Сначала дорогое</option>
@@ -153,7 +148,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" alt="Любительская
-                        селфи-палка." src="../images/catalog-images/amature.jpg" width="360" height="380">
+                        селфи-палка." src="images/catalog-images/amature.jpg" width="360" height="380">
                   <h3 class="product-card-title">Любительская
                     селфи-палка</h3>
                   <span>500 ₽</span>
@@ -162,7 +157,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" alt="Профессиональная селфи-палка."
-                    src="../images/catalog-images/professional.jpg" width="360" height="380">
+                    src="images/catalog-images/professional.jpg" width="360" height="380">
                   <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                   <span>1 500 ₽</span>
                 </a>
@@ -170,7 +165,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="product-image" alt="Непотопляемая
-                        селфи-палка." src="../images/catalog-images/unsinkable.jpg" width="360" height="380">
+                        селфи-палка." src="images/catalog-images/unsinkable.jpg" width="360" height="380">
                   <h3 class="product-card-title">Непотопляемая
                     селфи-палка</h3>
                   <span>2 500 ₽</span>
@@ -178,7 +173,7 @@
               </li>
               <li class="product-item">
                 <a class="product-link" href="#">
-                  <img class="product-image" alt="Селфи-палка «Следуй за мной»." src="../images/catalog-images/hand.jpg"
+                  <img class="product-image" alt="Селфи-палка «Следуй за мной»." src="images/catalog-images/hand.jpg"
                     width="360" height="380">
                   <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                   <span>1 500 ₽</span>
@@ -217,7 +212,7 @@
   <footer class="page-footer">
     <div class="footer-container">
       <a class="logo-footer" href="#">
-        <img class="page-logo" alt="Логотип магазина Девайс." src="../images/footer-images/logo-footer.svg" width="145"
+        <img class="page-logo" alt="Логотип магазина Девайс." src="images/footer-images/logo-footer.svg" width="145"
           height="36">
       </a>
       <div class="footer-wrapper">
@@ -260,7 +255,7 @@
           <h2 class="visually-hidden">Телефон.</h2>
           <a class="contacts-phone-footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="logo" href="https://htmlacademy.ru/">
-            <img class="html-logo" alt="Логотип HTML Академии." src="../images/footer-images/logo-html-academy-footer.svg"
+            <img class="html-logo" alt="Логотип HTML Академии." src="images/footer-images/logo-html-academy-footer.svg"
               width="115" height="33">
           </a>
         </section>

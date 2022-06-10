@@ -51,6 +51,24 @@ body {
     margin-bottom: 30px;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 30px 60px;
+}
+
+.navigation-wrapper {
+    display: flex;
+}
+
+.navigation-wrapper:first-child {
+    gap: 24px;
+}
+
+.navigation-wrapper:last-child .navigation-link:last-child {
+    margin-left: 36px;
+}
+
 .main-header {
     background-color: #FFE17F;
     color: #000000;
@@ -59,19 +77,10 @@ body {
     margin-top: 40px;
 }
 
-.navigation-main {
-    display: flex;
-    margin: 0 auto;
-    padding: 0;
-    width: 1040px;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
 .new-products {
     margin: 0 auto;
     width: 1160px;
-    background-image: linear-gradient(#FFE17F 25%, #FFFFFF 25%);
+    background-image: linear-gradient(#FFE17F 149px, #FFFFFF 149px);
 }
 
 .catalog-header {
@@ -107,9 +116,7 @@ body {
     padding: 12px;
 }
 
-.button-and-pagination {
-    display: flex;
-    align-items: center;
+.button {
     margin-bottom: 49px;
 }
 
@@ -131,7 +138,7 @@ body {
 
 .navigation-catalog {
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0 60px;
     padding: 0;
     width: 1040px;
     display: flex;
@@ -198,7 +205,17 @@ body {
 .new-product-list {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
 }
+
+dd {
+    grid-row: 1 / 2;
+}
+
+
 
 .new-product-list:not(:last-child) {
     margin-right: 20px;
@@ -511,24 +528,23 @@ body {
     width: 175px;
 }
 
-.main-inner {
-    margin: 0 auto;
+.header-inner {
     width: 1160px;
+    margin: 0 auto
 }
 
-.header-inner {
-    width: 1080px;
+.header-inner-conteiner {
     margin-left: 60px;
+    margin-top: 35px;
     margin-bottom: 35px;
 }
 
-.header-inner h1 {
+.header-inner-conteiner h1 {
     font-family: Raleway, sans-serif;
     font-size: 50px;
     line-height: 50px;
     margin: 0;
     padding: 0;
-    margin-top: 35px;
     margin-bottom: 16px;
 
 }
@@ -609,11 +625,24 @@ body {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
 }
 
 .product-link {
     color: #000000;
     text-decoration: none;
+}
+
+.product-link {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto auto;
+    row-gap: 32px;
+}
+
+.product-image {
+    grid-column: 1/-1;
 }
 
 .product-item span {
@@ -623,8 +652,12 @@ body {
 
 .product-list {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    row-gap: 40px;
+    column-gap: 44px;
+    margin: 0px 40px 44px 40px;
 }
 
 .button-show-more {
@@ -634,6 +667,8 @@ body {
 .white-background {
     background-color: #FFFFFF;
     padding-bottom: 78px;
+    padding-top: 70px;
+    width: 840px;
 }
 
 .pagination-link {
