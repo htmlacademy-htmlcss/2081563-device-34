@@ -215,7 +215,7 @@ body {
     margin: 0 auto;
     width: 1160px;
     margin-top: 40px;
-    margin-bottom: -8px;
+    margin-bottom: -3px;
 }
 
 .main-header-catalog {
@@ -258,22 +258,45 @@ body {
     position: absolute;
     top: 375px;
     right: 0;
+    z-index: 2;
 }
 
 .slider-pagination-item:not(:last-child) {
     margin-right: 20px;
 }
 
-.slider-pagination-item
-
-.slider-pagination-button {
+.slider-pagination-item .slider-pagination-button {
     width: 12px;
     height: 12px;
     padding: 0;
-    border: 2px solid #000000;
-    border-radius: 50%;
     background-color: transparent;
     display: block;
+    border: none;
+}
+
+.stroke-lider-button {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.stroke-lider-button-current {
+    background-color: #000000;
+}
+
+.slider-pagination-button:hover .stroke-lider-button {
+    opacity: 0.6;
+}
+
+.slider-pagination-button:active .stroke-lider-button {
+    opacity: 0.3;
+}
+
+.slider-pagination-button:focus {
+    box-shadow: 0 0 0 2px #AF4FFF;
 }
 
 .button-social {
@@ -404,6 +427,27 @@ body {
 .container-title {
     width: 560px;
     margin-top: 120px;
+    position: relative;
+    z-index: 0;
+}
+
+.container-title::after {
+    content: "01";
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: -100px;
+    right: 49px;
+    z-index: -1;
+    width: 250px;
+    height: 135px;
 }
 
 .button {
@@ -486,9 +530,6 @@ dd {
 }
 
 .main-catalog-list {
-    font-family: Raleway, sans-serif;
-    letter-spacing: -0.02em;
-    line-height: 24px;
     list-style-type: none;
     margin: 0 auto;
     margin-bottom: 70px;
@@ -511,6 +552,12 @@ dd {
 }
 
 .catalog-item-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
     margin: 0;
     margin-top: 32px;
     padding: 0;
@@ -533,8 +580,9 @@ dd {
 }
 
 .advantages {
-    background-image: linear-gradient(#FFFFFF 102px, #F0F0F0 102px)
+    background-image: linear-gradient(#FFFFFF 102px, #F0F0F0 102px);
 }
+
 
 .advantages-description {
     margin: 0;
@@ -547,6 +595,17 @@ dd {
     width: 1160px;
     display: flex;
     margin-bottom: 70px;
+    position: relative;
+}
+
+.tabs::before {
+    content: "";
+    background-image: url(../images/index-images/tab-delivery.svg);
+    width: 136px;
+    height: 164px;
+    position: absolute;
+    right: 63px;
+    top: 77.5px;
 }
 
 .tabs_items {
