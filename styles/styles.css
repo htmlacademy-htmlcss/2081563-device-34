@@ -145,11 +145,19 @@ body {
     bottom: 0;
 }
 
+.navigation-icon-cart {
+    position: absolute;
+    left: 15px;
+    top: 6px;
+    z-index: -1;
+}
+
 .navigation-link {
     color: #000000;
     text-decoration: none;
     position: relative;
     padding-left: 27px;
+    z-index: 1;
 }
 
 .navigation-link:hover {
@@ -202,7 +210,23 @@ body {
 }
 
 .navigation-link-cart {
-    padding-left: 43px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.cart-counter {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.5px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 22px;
+    width: 21px;
+    height: 21px;
 }
 
 .navigation-wrapper:last-child .navigation-link:last-child {
@@ -215,7 +239,7 @@ body {
     margin: 0 auto;
     width: 1160px;
     margin-top: 40px;
-    margin-bottom: -3px;
+    margin-bottom: -8px;
 }
 
 .main-header-catalog {
@@ -231,7 +255,7 @@ body {
     margin: 0 auto;
     width: 1160px;
     background-image: linear-gradient(#FFE17F 149px, #FFFFFF 149px);
-    position: relative;
+    margin-bottom: 70px;
 }
 
 .catalog-header {
@@ -256,7 +280,7 @@ body {
     list-style-type: none;
     display: flex;
     position: absolute;
-    top: 375px;
+    top: 14px;
     right: 0;
     z-index: 2;
 }
@@ -431,7 +455,7 @@ body {
     z-index: 0;
 }
 
-.container-title::after {
+.number-product {
     content: "01";
     color: #FFFFFF;
     font-family: 'Rubik';
@@ -462,7 +486,7 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     text-decoration: none;
     display: inline-block;
     padding: 10px 5px;
@@ -470,7 +494,7 @@ body {
     border: none;
 }
 
-.button::before {
+.button::after {
     content: "";
     width: 100%;
     height: 8px;
@@ -489,16 +513,20 @@ body {
 
 .button:active {
     background-color: #FFCC33;
-    z-index: inherit;
+    z-index: auto;
 }
 
 .button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
 }
 
-.button-more {
-    width: 220px;
+.wrapper-button-pagination {
+    position: relative;
     margin-bottom: 49px;
+}
+
+.button-more {
+    min-width: 220px;
 }
 
 .new-product-list {
@@ -596,29 +624,19 @@ dd {
     width: 1160px;
     display: flex;
     margin-bottom: 70px;
-    position: relative;
 }
 
-.tabs::before {
-    content: "";
-    background-image: url(../images/index-images/tab-delivery.svg);
-    width: 136px;
-    height: 164px;
-    position: absolute;
-    right: 63px;
-    top: 77.5px;
-}
-
-.tabs_items {
+.tabs-items {
     width: 280px;
     margin-right: 116px;
     display: flex;
     flex-direction: column;
     padding-top: 64px;
     position: relative;
+    align-items: flex-start;
 }
 
-.tabs_items::after {
+.tabs-items::after {
     content: "";
     position: absolute;
     width: 7px;
@@ -628,21 +646,17 @@ dd {
     left: 280px;
 }
 
-.tabs_item_button:first-child {
+.tabs-item-button:not(:last-child) {
     margin-bottom: 35px;
 }
 
-.tabs_item_button:nth-child(2) {
-    margin-bottom: 35px;
-}
-
-.tabs_item_button {
+.tabs-item-button {
     border: none;
     cursor: pointer;
-    width: 160px;
+    min-width: 160px;
 }
 
-.tabs_item_button-current {
+.tabs-item-button-current {
     border: none;
     cursor: pointer;
     background-color: #000000;
@@ -659,9 +673,20 @@ dd {
     width: 100%;
 }
 
-.tabs_block {
+.tabs-block {
     margin-top: 72.5px;
     padding-bottom: 144.5px;
+    position: relative;
+}
+
+.tabs-block::before {
+    content: "";
+    background-image: url(../images/index-images/tab-delivery.svg);
+    width: 136px;
+    height: 164px;
+    position: absolute;
+    right: -242px;
+    top: 5px;
 }
 
 .advantages-title {
@@ -855,8 +880,14 @@ dd {
     padding: 10px;
     padding-left: 6px;
     padding-right: 6px;
-    display: block;
-    width: 259px;
+}
+
+.about-link {
+    min-width: 270px;
+}
+
+.contacts-link {
+    min-width: 259px;
 }
 
 .newsletter {
@@ -1203,7 +1234,7 @@ dd {
     content: "подробнее";
     min-width: 220px;
     height: 40px;
-    background-image: linear-gradient(transparent 16px, #FFE17F 16px,#FFE17F 24px, transparent 24px);
+    background-image: linear-gradient(transparent 16px, #FFE17F 16px, #FFE17F 24px, transparent 24px);
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -1245,7 +1276,7 @@ dd {
 
 .product-link:active .background-image-wrapper::after {
     opacity: 1;
-    background-image: linear-gradient(transparent 16px, #FFC700 16px,#FFC700 24px, transparent 24px);
+    background-image: linear-gradient(transparent 16px, #FFC700 16px, #FFC700 24px, transparent 24px);
 }
 
 .product-link:focus {
