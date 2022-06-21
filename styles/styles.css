@@ -278,6 +278,7 @@ body {
 .slider-image {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .slider-pagination {
