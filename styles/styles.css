@@ -220,13 +220,16 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 22.5px;
+    line-height: 17px;
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 50%;
     margin-right: 22px;
     width: 21px;
     height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation-wrapper:last-child .navigation-link:last-child {
@@ -240,6 +243,8 @@ body {
     width: 1160px;
     margin-top: 40px;
     margin-bottom: -8px;
+    position: relative;
+    z-index: 1;
 }
 
 .main-header-catalog {
@@ -251,11 +256,12 @@ body {
     padding-bottom: 36.6px;
 }
 
-.new-products {
+.main-wrapper {
     margin: 0 auto;
     width: 1160px;
     background-image: linear-gradient(#FFE17F 149px, #FFFFFF 149px);
     margin-bottom: 70px;
+    position: relative;
 }
 
 .catalog-header {
@@ -280,8 +286,8 @@ body {
     list-style-type: none;
     display: flex;
     position: absolute;
-    top: 14px;
     right: 0;
+    bottom: 173px;
     z-index: 2;
 }
 
@@ -404,7 +410,6 @@ body {
 .container-card {
     width: 560px;
     align-self: flex-start;
-    position: relative;
 }
 
 .slider-button {
@@ -445,7 +450,7 @@ body {
 .slider-next {
     position: absolute;
     top: 211px;
-    right: 0;
+    right: 600px;
 }
 
 .container-title {
@@ -481,7 +486,7 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 20px;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -513,7 +518,10 @@ body {
 
 .button:active {
     background-color: #FFCC33;
-    z-index: auto;
+}
+
+.button:active::after {
+    opacity: 0;
 }
 
 .button:focus {
@@ -525,8 +533,13 @@ body {
     margin-bottom: 49px;
 }
 
+.button-new-product-list {
+    padding-right: 76px;
+}
+
 .button-more {
     min-width: 220px;
+    margin-bottom: 49px;
 }
 
 .new-product-list {
@@ -1213,25 +1226,54 @@ dd {
 .product-link {
     color: #000000;
     text-decoration: none;
+    position: relative;
+    display: block;
 }
 
-.product-link {
+.wrapper-product-cart span {
+    text-align: right;
+}
+
+.new-item-icon {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-top: 2px;
+    opacity: 0.6;
+    position: absolute;
+    top: 27px;
+    right: 27px;
+}
+
+.wrapper-product-cart {
     display: grid;
     grid-template-columns: min-content auto;
     grid-template-rows: auto auto;
     row-gap: 32px;
 }
 
-.background-image-wrapper {
+.background-wrapper {
     grid-column: 1/-1;
     width: 360px;
     height: 380px;
     background-color: #F0F0F0;
-    position: relative;
 }
 
-.background-image-wrapper::after {
-    content: "подробнее";
+.link-more {
     min-width: 220px;
     height: 40px;
     background-image: linear-gradient(transparent 16px, #FFE17F 16px, #FFE17F 24px, transparent 24px);
@@ -1250,16 +1292,16 @@ dd {
     opacity: 0;
 }
 
-.product-link:hover .background-image-wrapper::after {
-    opacity: 1;
+.product-link:hover .wrapper-product-cart {
+    opacity: 0.6;
 }
 
-.product-link:hover .product-image {
+.product-link:hover .new-item-icon {
     opacity: 0.2;
 }
 
-.product-link:hover .product-card-title {
-    opacity: 0.6;
+.product-link:hover .link-more {
+    opacity: 1;
 }
 
 .product-link:active .product-card-title {
@@ -1270,22 +1312,17 @@ dd {
     opacity: 0.6;
 }
 
-.product-link:active .product-image {
-    opacity: 0.2;
-}
-
-.product-link:active .background-image-wrapper::after {
+.product-link:active .link-more {
     opacity: 1;
     background-image: linear-gradient(transparent 16px, #FFC700 16px, #FFC700 24px, transparent 24px);
 }
 
-.product-link:focus {
-    box-shadow: 0 0 0 2px #AF4FFF;
+.product-link:active .new-item-icon {
+    opacity: 0.2;
 }
 
-.product-item span {
-    line-height: 21px;
-    text-align: right;
+.product-link:focus {
+    box-shadow: 0 0 0 2px #AF4FFF;
 }
 
 .product-list {
@@ -1308,12 +1345,20 @@ dd {
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    padding: 18px 295px;
     background: transparent;
+    box-sizing: border-box;
+    min-width: 760px;
+    word-break: break-all;
+    min-height: 55px;
+}
+
+.button-show-more span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-show-more:hover {
