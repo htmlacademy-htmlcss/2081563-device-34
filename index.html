@@ -16,7 +16,9 @@
       <div class="navigation-wrapper">
         <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
           <label class="visually-hidden" for="search">Поиск.</label>
-          <input class="search" type="search" name="search" id="search" placeholder="Текст поиска">
+          <div class="search-stroke">
+            <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+          </div>
           <button class="submit-search" type="submit"><span class="stroke-button">Найти</span></button>
         </form>
         <a class="navigation-link" href="#">
@@ -44,19 +46,71 @@
               fill="#000" />
           </svg>
           Корзина</a>
+        <div class="popover popover-cart">
+          <div class="popover-content">
+            <ul class="cart-items-list">
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="cart-image" alt="Любительская селфи-палка." src="images/catalog-images/amature.jpg"
+                    width="39" height="43">
+                  <p class="cart-item-title">Любительская селфи-палка</p>
+                </a>
+                <button class="cart-item-button" type="button">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
+                      fill="#fff" />
+                  </svg>
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="cart-image" alt="Профессиональная селфи-палка"
+                    src="images/catalog-images/professional.jpg" width="39" height="43">
+                  <p class="cart-item-title">Профессиональная селфи-палка</p>
+                </a>
+                <button class="cart-item-button" type="button">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
+                      fill="#fff" />
+                  </svg>
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="cart-popover-counter">
+              <p class="cart-counter-paragraph">Товаров: <span class="cart-counter-amount">2</span></p>
+              <p class="cart-counter-paragraph">Сумма: <span class="cart-counter-total">2000</span> ₽</p>
+            </div>
+            <a class="button-open-cart" href="#"><span>Открыть корзину</span></a>
+          </div>
+        </div>
       </div>
     </div>
     <nav class="navigation">
       <ul class="navigation-catalog">
         <li class="list-item">
           <a class="navigation-link-catalog" href="#">Каталог товаров
-            <svg class="button-catalog" width="50" height="50" viewBox="0 0 50 50" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M48 25a23 23 0 1 1-46 0 23 23 0 0 1 46 0Zm2 0a25 25 0 1 1-50 0 25 25 0 0 1 50 0Zm-24-1h7v2h-7v7h-2v-7h-7v-2h7v-7h2v7Z"
-                fill="#000" />
-            </svg>
+            <span class="button-catalog">
+              <svg class="button-plus" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7.17H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" />
+              </svg>
+              <svg class="button-minus" width="16" height="3" viewBox="0 0 16 3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 .17H0v2h16v-2Z" />
+              </svg>
+            </span>
           </a>
+          <ul class="subcatalog">
+            <li class="subcatalog-item"><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-link" href="catalog.html">Моноподы для
+                cелфи</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-link" href="#">Экшн-камеры</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-link" href="#">Фитнес-браслеты</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-link" href="#">Умные часы</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
+          </ul>
         </li>
         <li class="list-item">
           <a class="navigation-link" href="#">Доставка</a>
@@ -86,16 +140,19 @@
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 слайд</span>
               <div class="stroke-lider-button stroke-lider-button-current"></div>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 слайд</span>
               <div class="stroke-lider-button"></div>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 слайд</span>
               <div class="stroke-lider-button"></div>
             </button>
           </li>
@@ -115,16 +172,16 @@
                 камеру.
               </p>
               <div class="button-new-product-list">
-              <a class="button-more button" href="#">
-                Подробнее
-              </a>
-              <dl class="new-product-list">
-                <dd>800 м</dd>
-                <dt>Дальность полета</dt>
-                <dd>50 м</dd>
-                <dt>Радиус поражения</dt>
-              </dl>
-            </div>
+                <a class="button-more button" href="#">
+                  Подробнее
+                </a>
+                <dl class="new-product-list">
+                  <dd>800 м</dd>
+                  <dt>Дальность полета</dt>
+                  <dd>50 м</dd>
+                  <dt>Радиус поражения</dt>
+                </dl>
+              </div>
             </div>
           </div>
           <!--<div class="new-product-card">
@@ -398,6 +455,73 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-form">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-content-title">Доставка под заказ</h2>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-wrapper">
+            <div class="form-container">
+              <label class="label-form" for="form-login">Ваше имя:</label>
+              <input class="form-field field-login" type="text" id="form-login" name="form-login"
+                placeholder="Введите имя">
+              <span class="add-name">Добавьте имя</span>
+            </div>
+            <div class="form-container">
+              <label class="label-form" for="form-email">Ваш e-mail:</label>
+              <input class="form-field field-email" type="email" id="form-email" name="form-email"
+                placeholder="Введите e-mail">
+              <span class="email-invalid">Забавный у вас адрес</span>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <div class="form-container">
+              <label class="label-form" for="form-wish">Что нужно привезти:</label>
+              <input class="form-field field-wish" type="text" id="form-wish" name="form-wish"
+                placeholder="В свободной форме">
+            </div>
+            <div class="form-container">
+              <span class="label-form">
+                <span class="label-form">Количество:</span>
+                <span class="tooltip">
+                  <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                    Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
+              <div class="amount-wrapper">
+                <button class="button-amount-minus button-amount" type="button">
+                  <span class="visually-hidden">Уменьшение стоимости</span>
+                  <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0v2h16V0Z" fill="#000" />
+                  </svg>
+                </button>
+                <input class="input-amount" type="number" value="1" name="amount">
+                <button class="button-amount-plus button-amount" type="button">
+                  <span class="visually-hidden">Увеличение стоимости</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="submit-modal-button button" type="submit">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
