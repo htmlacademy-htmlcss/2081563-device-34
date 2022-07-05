@@ -139,10 +139,10 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
     text-align: center;
     color: #000000;
     padding: 8.5px 54.5px;
+    display: block;
 }
 
 .stroke-button:hover {
