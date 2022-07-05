@@ -64,6 +64,7 @@ body {
 
 .logo-header:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .wrapper {
@@ -157,6 +158,7 @@ body {
 
 .submit-search:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .submit-search:disabled {
@@ -209,6 +211,7 @@ body {
 
 .navigation-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .navigation-link-disabled {
@@ -244,6 +247,7 @@ body {
 
 .navigation-link-catalog:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .navigation-link-catalog:focus .button-plus {
@@ -315,6 +319,7 @@ body {
 
 .subcatalog-link-current:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .subcatalog-link {
@@ -337,6 +342,7 @@ body {
 
 .subcatalog-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .subcatalog-list .list-item:not(:last-child) {
@@ -428,6 +434,7 @@ body {
 
 .cart-item-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .cart-item-title {
@@ -459,6 +466,7 @@ body {
 
 .cart-item-button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .cart-item {
@@ -513,6 +521,7 @@ body {
 
 .button-open-cart:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .button-open-cart:disabled {
@@ -608,29 +617,31 @@ body {
     border: none;
 }
 
-.stroke-lider-button {
+.stroke-slider-button {
     width: 12px;
     height: 12px;
     border: 2px solid #000000;
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
+    display: block;
 }
 
-.stroke-lider-button-current {
+.stroke-slider-button-current {
     background-color: #000000;
 }
 
-.slider-pagination-button:hover .stroke-lider-button {
+.slider-pagination-button:hover .stroke-slider-button {
     opacity: 0.6;
 }
 
-.slider-pagination-button:active .stroke-lider-button {
+.slider-pagination-button:active .stroke-slider-button {
     opacity: 0.3;
 }
 
 .slider-pagination-button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .button-social {
@@ -659,6 +670,7 @@ body {
 
 .button-social:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 
@@ -738,6 +750,7 @@ body {
 
 .slider-button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .slider-button:disabled {
@@ -831,6 +844,7 @@ body {
 
 .button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .wrapper-button-pagination {
@@ -929,6 +943,7 @@ dd {
 
 .catalog-item-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .advantages {
@@ -1088,6 +1103,7 @@ dd {
 
 .delivery-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .about_and_contacts {
@@ -1316,6 +1332,7 @@ dd {
 
 .newsletter-button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .newsletter-button:disabled {
@@ -1411,7 +1428,6 @@ dd {
     padding: 0;
     list-style-type: none;
     flex-wrap: wrap;
-    gap: 5px;
 }
 
 .navigation-catalog-footer {
@@ -1448,6 +1464,7 @@ dd {
 
 .contacts-phone-footer:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .phone {
@@ -1552,6 +1569,7 @@ dd {
 
 .select-control:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .select-control:disabled {
@@ -1580,6 +1598,7 @@ dd {
 
 .button-sort:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .catalog-products {
@@ -1979,6 +1998,7 @@ dd {
 
 .product-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .product-list {
@@ -2022,6 +2042,7 @@ dd {
 
 .button-show-more:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .button-show-more:disabled {
@@ -2070,6 +2091,7 @@ dd {
 
 .pagination-link-number:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .pagination-link {
@@ -2098,6 +2120,7 @@ dd {
 
 .pagination-link:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .pagination-list:first-child {
@@ -2141,6 +2164,7 @@ dd {
 
 .logo-footer:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .phone .logo {
@@ -2161,6 +2185,7 @@ dd {
 
 .phone .logo:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .navigation-link-footer {
@@ -2205,6 +2230,7 @@ dd {
 
 .navigation-link-footer:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .footer-social-item {
@@ -2274,6 +2300,7 @@ dd {
 
 .modal-close-button:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .modal-content-title {
@@ -2336,6 +2363,7 @@ dd {
 
 .form-field:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .form-field:disabled {
@@ -2425,6 +2453,7 @@ dd {
 
 .button-amount:focus {
     box-shadow: 0 0 0 2px #AF4FFF;
+    outline: none;
 }
 
 .amount {
