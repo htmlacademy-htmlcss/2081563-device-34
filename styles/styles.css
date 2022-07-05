@@ -1428,7 +1428,6 @@ dd {
     padding: 0;
     list-style-type: none;
     flex-wrap: wrap;
-    gap: 5px;
 }
 
 .navigation-catalog-footer {
