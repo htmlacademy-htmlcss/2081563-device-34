@@ -10,15 +10,15 @@
 
 <body>
   <header class="main-header">
-    <a class="logo-header" href="#">
+    <a class="logo-header logo-header-current">
       <img class="page-logo" alt="Логотип магазина Девайс." src="images/header-images/logo.svg" width="145" height="36">
     </a>
     <div class="wrapper">
       <div class="navigation-wrapper">
-        <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
+        <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
           <label class="visually-hidden" for="search">Поиск.</label>
           <div class="search-stroke">
-            <input class="search" type="search" name="search" id="search" placeholder="Текст поиска">
+            <input class="search" type="search" name="search" id="search" placeholder="Текст поиска" required>
           </div>
           <button class="submit-search" type="submit"><span class="stroke-button">Найти</span></button>
         </form>
@@ -64,7 +64,7 @@
                       d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
                       fill="#fff" />
                   </svg>
-                  <span class="visually-hidden">Удалить из корзины</span>
+                  <span class="visually-hidden">Удалить из корзины.</span>
                 </button>
               </li>
               <li class="cart-item">
@@ -80,7 +80,7 @@
                       d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
                       fill="#fff" />
                   </svg>
-                  <span class="visually-hidden">Удалить из корзины</span>
+                  <span class="visually-hidden">Удалить из корзины.</span>
                 </button>
               </li>
             </ul>
@@ -153,25 +153,25 @@
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 слайд</span>
+              <span class="visually-hidden">1 слайд.</span>
               <span class="stroke-slider-button stroke-slider-button-current"></span>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 слайд</span>
+              <span class="visually-hidden">2 слайд.</span>
               <span class="stroke-slider-button"></span>
             </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 слайд</span>
+              <span class="visually-hidden">3 слайд.</span>
               <span class="stroke-slider-button"></span>
             </button>
           </li>
         </ol>
         <div class="slide-wrapper">
-          <div class="new-product-card">
+          <div class="new-product-card new-product-card-сurrent">
             <div class="container-card">
               <img class="slider-image" src="images/index-images/slider-1.png" alt="Фото нового товара." width="560"
                 height="560">
@@ -197,9 +197,9 @@
               </div>
             </div>
           </div>
-          <!-- Карточки слайдера -->
+          <!-- Карточки слайдера при добавлении класса new-product-card-сurrent отображается слайд -->
 
-          <!--<div class="new-product-card">
+          <div class="new-product-card">
         <div class="container-card">
         <img class="slider-image" src="images/index-images/slider-2.png" alt="Фото нового товара." width="560"
           height="560">
@@ -215,8 +215,8 @@
           Подробнее
           </a>
         <dl class="new-product-list">
-          <dd>48 часов</dd>
           <dt>Без подзарядки</dt>
+          <dd>48 часов</dd>
         </dl>
         </div>
       </div>
@@ -237,19 +237,19 @@
           Подробнее
           </a>
         <dl class="new-product-list">
-          <dd>8,5 м</dd>
           <dt>Длина палки</dt>
+          <dd>8,5 м</dd>
         </dl>
-        <dl class=class="new-product-list">
-          <dd>5 кг</dd>
+        <dl class="new-product-list">
           <dt>Вес палки</dt>
+          <dd>5 кг</dd>
           </dl>
-        <dl class=class="new-product-list">
-          <dd>Карбон</dd>
+        <dl class="new-product-list">
           <dt>Материал</dt>
+          <dd>Карбон</dd>
         </dl>
         </div>
-      </div>-->
+      </div>
         </div>
       </div>
     </section>
@@ -310,14 +310,14 @@
           <button class="tabs-item-button button" type="button"><span>Гарантия</span></button>
           <button class="tabs-item-button button" type="button">Кредит</button>
         </div>
-        <div class="tabs-block">
+        <div class="tabs-block tabs-block-current">
           <h3 class="advantages-title">Доставка</h3>
           <p class="advantages-description">Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
-        <!-- Остальные табы -->
-        <!--<div class="tabs-block">
+        <!-- Добавление класса tabs-block-current отображает следующий таб -->
+        <div class="tabs-block">
             <h3 class="advantages-title">Гарантия</h3>
             <p class="advantages-description">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
@@ -327,7 +327,7 @@
             <h3 class="advantages-title">Кредит</h3>
             <p class="advantages-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
               кредита. Выгодные для банка, разумеется.</p>
-          </div>-->
+          </div>
       </div>
     </section>
     <div class="delivery">
@@ -387,7 +387,7 @@
           <label class="visually-hidden">Email</label>
           <form class="form-subscribe" action="https://echo.htmlacademy.ru/courses" method="post">
             <label class="visually-hidden" for="email">Почта.</label>
-            <input class="field" type="email" name="newsletter-email" id="email" placeholder="Ваш e-mail">
+            <input class="field" type="email" name="newsletter-email" id="email" placeholder="Ваш e-mail" required>
             <button class="newsletter-button" type="submit">Подписаться</button>
           </form>
           <span class="its-free">Это бесплатно</span>
@@ -397,7 +397,7 @@
   </main>
   <footer class="page-footer">
     <div class="footer-container">
-      <a class="logo-footer" href="#">
+      <a class="logo-footer logo-footer-current">
         <img class="page-logo" alt="Логотип магазина Девайс." src="images/footer-images/logo-footer.svg" width="145"
           height="36">
       </a>
@@ -465,6 +465,7 @@
           <h2 class="visually-hidden">Телефон.</h2>
           <a class="contacts-phone-footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="logo" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип HTML Academy.</span>
             <svg class="html-logo" width="115" height="33" viewBox="0 0 115 33" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -478,8 +479,8 @@
   <!-- Класс modal-container-close отвечает за отображение модального окна -->
   <div class="modal-container modal-container-close">
     <div class="modal modal-form">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть окно</span>
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть окно.</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-content-title">Доставка под заказ</h2>
@@ -488,13 +489,13 @@
             <div class="form-container">
               <label class="label-form" for="form-login">Ваше имя:</label>
               <input class="form-field field-login" type="text" id="form-login" name="form-login"
-                placeholder="Введите имя">
+                placeholder="Введите имя" required>
               <span class="add-name">Добавьте имя</span>
             </div>
             <div class="form-container">
               <label class="label-form" for="form-email">Ваш e-mail:</label>
               <input class="form-field field-email" type="email" id="form-email" name="form-email"
-                placeholder="Введите e-mail">
+                placeholder="Введите e-mail" required>
               <span class="email-invalid">Забавный у вас адрес</span>
             </div>
           </div>
@@ -502,11 +503,11 @@
             <div class="form-container">
               <label class="label-form" for="form-wish">Что нужно привезти:</label>
               <input class="form-field field-wish" type="text" id="form-wish" name="form-wish"
-                placeholder="В свободной форме">
+                placeholder="В свободной форме" required>
             </div>
             <div class="form-container">
               <span class="label-form">
-                <span class="label-form">Количество:</span>
+                <label class="label-form" for="amount">Количество:</label>
                 <span class="tooltip">
                   <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="2" height="12"
@@ -521,15 +522,15 @@
               </span>
               <div class="amount-wrapper">
                 <button class="button-amount-minus button-amount" type="button">
-                  <span class="visually-hidden">Уменьшение стоимости</span>
+                  <span class="visually-hidden">Уменьшение стоимости.</span>
                   <svg aria-hidden="true" focusable="false" width="16" height="2" viewBox="0 0 16 2" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 0H0v2h16V0Z" fill="#000" />
                   </svg>
                 </button>
-                <input class="input-amount" type="number" value="1" name="amount">
+                <input class="input-amount" type="number" min="1" value="1" name="amount" id="amount" required>
                 <button class="button-amount-plus button-amount" type="button">
-                  <span class="visually-hidden">Увеличение стоимости</span>
+                  <span class="visually-hidden">Увеличение стоимости.</span>
                   <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" />
