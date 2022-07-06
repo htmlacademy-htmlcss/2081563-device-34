@@ -99,11 +99,11 @@
         <li class="list-item">
           <a class="navigation-link-catalog" href="#">Каталог товаров
             <span class="button-catalog">
-              <svg aria-hidden="true" focusable="false" class="button-plus" width="16" height="17" viewBox="0 0 16 17"
+              <svg class="button-plus" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 7.17H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" />
               </svg>
-              <svg aria-hidden="true" focusable="false" class="button-minus" width="16" height="3" viewBox="0 0 16 3"
+              <svg class="button-minus" aria-hidden="true" focusable="false" width="16" height="3" viewBox="0 0 16 3"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 .17H0v2h16v-2Z" />
               </svg>
@@ -113,7 +113,7 @@
             <li class="subcatalog-item">
               <ul class="subcatalog-list subcatalog-list-one">
                 <li class="list-one-item"><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
-                <li class="list-one-item"><a class="subcatalog-link subcatalog-link-current" href="catalog.html">Моноподы для
+                <li class="list-one-item"><a class="subcatalog-link subcatalog-link-current">Моноподы для
                     cелфи</a></li>
                 <li class="list-one-item"><a class="subcatalog-link" href="#">Экшн-камеры</a></li>
               </ul>
@@ -165,10 +165,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 119px;">
-                    <button type="button" class="range-toogle toogle-min">
+                    <button class="range-toogle toogle-min" type="button">
                       <span class="visually-hidden">Минимальцая цена</span>
                     </button>
-                    <button type="button" class="range-toogle toogle-max">
+                    <button class="range-toogle toogle-max" type="button">
                       <span class="visually-hidden">Максимальная цена</span>
                     </button>
                     <label class="catalog-filter-label catalog-filter-min">
@@ -201,7 +201,7 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue" disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">Синий</span>
                   </label>
@@ -253,14 +253,14 @@
               <option value="expensive">Дорогое</option>
               <option value="cheap">Дешевое</option>
             </select>
-            <a href="#" class="button-sort button-sort-up">
+            <a class="button-sort button-sort-up" href="#">
               <span class="visually-hidden">По возростанию.</span>
-              <svg aria-hidden="true" focusable="false" class="" width="12" height="10" viewBox="0 0 12 10" fill="none"
+              <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="m6 0 5.5 10H.5" fill="#000" />
               </svg>
             </a>
-            <a href="#" class="button-sort button-sort-down">
+            <a class="button-sort button-sort-down" href="#">
               <span class="visually-hidden">По убыванию.</span>
               <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -269,6 +269,7 @@
             </a>
           </div>
           <div class="white-background">
+            <h2 class="visually-hidden">Результат поиска товаров:</h2>
             <ul class="product-list">
               <li class="product-item">
                 <a class="product-link new-item" href="#">
@@ -332,10 +333,10 @@
             <button class="button-show-more" type="button"><span>Загрузить ещё</span></button>
             <ul class="pagination">
               <li class="pagination-list">
-                <a class="pagination-link pagination-prev pagination-disabled" href="#">Назад</a>
+                <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
               </li>
               <li class="pagination-list">
-                <a class="pagination-link-number pagination-link-number-current" href="#">1</a>
+                <a class="pagination-link-number pagination-link-number-current">1</a>
               </li>
               <li class="pagination-list">
                 <a class="pagination-link-number" href="#">2</a>
@@ -360,7 +361,7 @@
   </main>
   <footer class="page-footer">
     <div class="footer-container">
-      <a class="logo-footer" href="#">
+      <a class="logo-footer" href="index.html">
         <img class="page-logo" alt="Логотип магазина Девайс." src="images/footer-images/logo-footer.svg" width="145"
           height="36">
       </a>
