@@ -246,12 +246,8 @@ body {
   outline: none;
 }
 
-.navigation-link-catalog:focus .button-plus {
-  display: none;
-}
-
-.navigation-link-catalog:focus .button-minus {
-  display: flex;
+.navigation-link-catalog:focus .button-catalog::after {
+  transform: rotate(0deg);
 }
 
 .navigation-link-compare {
@@ -359,10 +355,25 @@ body {
   border: 2px solid #000000;
   border-radius: 50%;
   opacity: 0.3;
+  transition: opacity 0.2s ease-in;
 }
 
-.button-minus {
-  display: none;
+.button-catalog::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+}
+
+.button-catalog::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  background-color: #000000;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease-in;
 }
 
 .navigation-link-cart {
